@@ -54,4 +54,48 @@ body {
   max-width: 500px;
   height: auto;
   border-radius: 12px;
+} 
+
+.botoes {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -25px;
+}
+
+.botao {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.botao.primario {
+  background: white;
+  color: #5865f2;
+}
+
+.botao.primario:hover {
+  color: #4752c4;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.botao.secundario {
+  background: #23272a;
+  color: white;
+}
+
+.botao.secundario:hover {
+  background: #2c2f33;
+}
+
+.botao.grande {
+  padding: 20px 40px;
+  font-size: 1.2rem;
 }
