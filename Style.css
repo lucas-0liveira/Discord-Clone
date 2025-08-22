@@ -100,4 +100,37 @@ body {
   font-size: 1.2rem;
 }
 
- 
+.funcionalidades {
+  background: white;
+  color: #23272a;
+  padding: 80px 0;
+}
+
+.funcionalidade{
+  padding: 80px 0;
+}
+
+.conteudo-funcionalidade{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.funcionalidade.reverso .conteudo-funcionalidade{
+  grid-template-columns: 1fr 1fr;
+}
+
+.funcionalidade.reverso .texto-funcionalidade{
+  order: 1;
+}
+
+.funcionalidade.reverso .imagem-funcionalidade{
+  order: 1;
+}
+
+.texto-funcionalidade p {
+  font-size: 1.25rem;
+  color: #4f5660;
+  line-height: 1.6;
+}
