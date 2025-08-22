@@ -104,16 +104,25 @@ body {
   background: white;
   color: #23272a;
   padding: 80px 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
 }
 
 .funcionalidade{
-  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .conteudo-funcionalidade{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 230px;
   align-items: center;
 }
 
@@ -129,8 +138,26 @@ body {
   order: 1;
 }
 
+.imagem-feature{
+  width: 140%;   
+  max-width: none;   
+  height: auto;
+}
+
+.texto-funcionalidade {
+  margin-left: 20px;
+}
+
+.texto-funcionalidade h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
 .texto-funcionalidade p {
   font-size: 1.25rem;
   color: #4f5660;
-  line-height: 1.6;
+  line-height: 1.4;
+  justify-content: justify;
 }
