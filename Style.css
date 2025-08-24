@@ -31,12 +31,12 @@ body {
     margin: auto;
     display: flex;
     flex-flow: column nowrap;
-    gap: 24px;
+    gap: 16px;
 }
 
 .hero h1 {
+  font-family: "Luckiest Guy", cursive;
   font-size: 3.5rem;
-  font-weight: 800;
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
   text-align: center;
