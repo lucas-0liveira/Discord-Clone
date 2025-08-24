@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +8,7 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    
     color: white;
     line-height: 1.6;
 }
@@ -36,23 +39,28 @@ body {
 
 .hero h1 {
   font-family: "Luckiest Guy", cursive;
-  font-size: 3.5rem;
+  font-size: 56px;
+  font-weight: 400;        
+  line-height: 1.1;        
   margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01rem; 
   text-align: center;
 }
 
 .hero p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
+  font-weight: 400;    
+  line-height: 1.5;
   margin-bottom: 2rem;
-  max-width: 920px;
+  max-width: 930px;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.9;
   text-align: center;
+  opacity: 0.9;
 
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 3;   /* mantém só 3 linhas */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
