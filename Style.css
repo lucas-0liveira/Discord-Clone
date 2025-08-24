@@ -26,7 +26,7 @@ body {
 }
 
 .hero .container {
-    max-width: 700px;
+    max-width: 1200px;
     padding: 0px 20px;
     margin: auto;
     display: flex;
@@ -39,16 +39,25 @@ body {
   font-weight: 800;
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  max-width: 600px;
+  max-width: 920px;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.9;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 .imagem-feature {
   width: 100%;
   max-width: 500px;
