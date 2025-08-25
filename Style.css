@@ -5,13 +5,13 @@
 }
 
 body {
-    
     color: white;
     line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -27,10 +27,9 @@ body {
 
 .hero .container {
     max-width: 1200px;
-    padding: 0px 20px;
-    margin: auto;
+    margin-top: 40px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -62,13 +61,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.imagem-feature {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 12px;
-} 
 
 .botoes {
   display: flex;
@@ -107,6 +99,7 @@ body {
 
 .botao.secundario:hover {
   background: #2c2f33;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .botao.grande {
@@ -115,22 +108,16 @@ body {
 }
 
 .funcionalidades {
-  background: white;
-  color: #23272a;
-  padding: 80px 0;
-  display: flex;
-  flex-flow: row wrap;
-  gap: 16px;
-  width: 100%;
-  max-width: 1280px;
-  margin: auto;
+  background-color: white;
 }
 
 .funcionalidade{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  padding: 80px 0;
+  color: #23272a;
+}
+
+section.grey{
+  background-color: #F6F6F6;
 }
 
 .conteudo-funcionalidade{
@@ -140,22 +127,41 @@ body {
   align-items: center;
 }
 
+.reverso {
+  gap: 20px;
+}
+
 .funcionalidade.reverso .conteudo-funcionalidade{
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.9fr 2.2fr;
 }
 
-.funcionalidade.reverso .texto-funcionalidade{
+.funcionalidade.reverso .texto-funcionalidade {
   order: 1;
 }
 
-.funcionalidade.reverso .imagem-funcionalidade{
-  order: 1;
+.funcionalidade.reverso .imagem-funcionalidade {
+  order: 2;
 }
 
-.imagem-feature{
-  width: 140%;   
-  max-width: none;   
+.imagem-feature {
+  width: 140%;
+  max-width: none;
   height: auto;
+  border-radius: 8px;
+}
+
+.imagem-feature2 {
+  width: 110%;
+  max-width: none;
+  height: auto;
+  border-radius: 8px;
+}
+
+.imagem-feature3 {
+  width: 70%;
+  max-width: none;
+  height: auto;
+  border-radius: 8px;
 }
 
 .texto-funcionalidade {
@@ -163,15 +169,62 @@ body {
 }
 
 .texto-funcionalidade h2 {
-  font-size: 2.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.4;
 }
 
 .texto-funcionalidade p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
-  color: #4f5660;
+  font-weight: 400;
+  color: black;
   line-height: 1.4;
   justify-content: justify;
+}
+
+.tecnologia {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.tecnologia h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 56px;
+  font-weight: 400;        
+  line-height: 1.1;        
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01rem; 
+  text-align: center;
+  color: #23272a;
+}
+
+.tecnologia p {
+  font-size: 1.25rem;
+  color: #4f5660;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    background-color: #23272a;
+    padding: 20px 0px;
+}
+
+.marca-rodape {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.logo-rodape {
+  width: 230px;
+  height: 63px;
+  object-fit: cover;
+  align-items: center;
 }
