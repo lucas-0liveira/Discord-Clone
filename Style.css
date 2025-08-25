@@ -22,7 +22,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 560px;
-  padding: 100px 0;
+  padding: 68px 0;
 }
 
 .hero .container {
@@ -123,7 +123,7 @@ section.grey{
 .conteudo-funcionalidade{
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  gap: 230px;
+  gap: 220px;
   align-items: center;
 }
 
@@ -141,6 +141,11 @@ section.grey{
 
 .funcionalidade.reverso .imagem-funcionalidade {
   order: 2;
+}
+
+.imagem-funcionalidade {
+  display: flex;
+  justify-content: center;
 }
 
 .imagem-feature {
@@ -227,4 +232,82 @@ section.grey{
   height: 63px;
   object-fit: cover;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    -webkit-line-clamp: unset;
+    display: block;
+  }
+
+  .botoes {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .conteudo-funcionalidade {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .funcionalidade.reverso .conteudo-funcionalidade {
+    flex-direction: column-reverse;
+  }
+
+  .texto-funcionalidade {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .texto-funcionalidade h2 {
+    font-size: 1.8rem;
+  }
+
+  .texto-funcionalidade p {
+    font-size: 1rem;
+    color: #23272a;
+  }
+
+  .imagem-feature,
+  .imagem-feature2,
+  .imagem-feature3 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .tecnologia h2 {
+    font-size: 2rem;
+  }
+
+  .tecnologia p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .rodape {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo-rodape {
+    width: 180px;
+    height: auto;
+  }
 }
